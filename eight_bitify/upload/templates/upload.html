@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>8-bitify | Retro gamify your pictures</title>
+  </head>
+  <body>
+    <center>
+      <h1>8-bitify</h1>
+      <hr/>
+      <form enctype="multipart/form-data" role='form' action='' method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+      </form>
+    </center>
+</html>
